@@ -20,7 +20,8 @@
           compatible = "zmk,behavior-sensor-rotate";
           label = "ENCODER_TAB_SLIDE";
           #sensor-binding-cells = <0>;
-          bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
+          //bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
+          bindings = <&kp R>, <&kp T>;
           tap-ms = <20>;
       };
     };
