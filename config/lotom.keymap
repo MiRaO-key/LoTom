@@ -71,11 +71,11 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE                                                                &kp BACKSPACE
+&kp ESCAPE                                                                &kp PSCRN
 &kp Q      &kp W         &kp E             &kp R           &kp T        &kp JP_ZKHK             &kp JP_AT            &kp Y            &kp U     &kp I        &kp O         &lt 2 P
 &kp A      &kp S         &kp D             &kp F           &kp G        &kp LSHIFT              &mt JP_COLON LSHIFT  &kp H            &kp J     &kp K        &kp L         &kp MINUS
 &kp Z      &kp X         &kp C             &kp V           &kp B        &kp LCTRL               &mt JP_YEN LALT      &kp N            &kp M     &kp COMMA    &kp DOT       &lt 2 SLASH
-&kp LGUI   &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LCTRL       &lt 4 SPACE  &kp TAB                 &kp BSPC             &lt 3 RET                         &lt 2 ESCAPE  &kp RIGHT_BRACKET
+&kp LGUI   &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LCTRL       &lt 4 SPACE  &kp TAB                 &kp BSPC             &lt 4 RET                         &lt 2 ESCAPE  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <
@@ -86,11 +86,11 @@
 
         MOUSE {
             bindings = <
-&trans                                                                                                                       &trans
-&trans     &trans        &trans            &trans          &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans     &trans        &trans            &trans          &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans     &trans        &trans            &trans          &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &trans      &trans  &mo 3                       &trans    &trans
+&trans                                                                                                                         &trans
+&trans     &trans        &trans            &trans          &trans  &trans      &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans    &trans
+&trans     &trans        &trans            &trans          &trans  &trans      &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans    &trans
+&trans     &trans        &trans            &trans          &trans  &trans      &trans  &trans    &trans    &trans    &trans    &trans
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &trans      &trans  &mo 3                       &trans      &trans
             >;
 
             sensor-bindings = <
@@ -129,12 +129,28 @@
             >;
         };
 
+        /*
+        NUM {
+            bindings = <
+    &trans                                                                                                                                                                  &trans
+    &kp GRAVE                &kp NUMBER_7  &kp NUMBER_8  &kp LG(LS(NUMBER_4))  &kp PLUS      &trans      &trans  &kp BACKSLASH    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SEMICOLON
+    &kp SLASH                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp ASTERISK  &trans      &trans  &kp EXCLAMATION  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SQT
+    &mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp PERIOD    &trans      &trans  &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+    &trans                   &trans        &trans        &trans                &trans        &trans      &trans  &kp LEFT_SHIFT                               &trans        &trans
+            >;
+
+            sensor-bindings = <
+            &inc_dec_kp RIGHT_ARROW LEFT_ARROW
+            &scroll_up_down
+            >;
+        };
+        */
         NUM {
             bindings = <
 &trans                                                                                                                                                                  &trans
-&kp GRAVE                &kp NUMBER_7  &kp NUMBER_8  &kp LG(LS(NUMBER_4))  &kp PLUS      &trans      &trans  &kp BACKSLASH    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SEMICOLON
-&kp SLASH                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6          &kp ASTERISK  &trans      &trans  &kp EXCLAMATION  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SQT
-&mt LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp PERIOD    &trans      &trans  &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+&kp none        &kp LEFT  &kp UP    &kp RIGHT     &kp PLUS      &trans      &trans  &kp N7   &kp N8  &kp N9  &kp JP_MINUS  &kp SEMICOLON
+&kp none      &kp LEFT  &kp DOWN  &kp RIGHT     &kp ASTERISK  &trans      &trans  &kp N4   &kp N5  &kp N6  &kp N0        &kp SQT
+&kp none      &kp none  &kp none  &kp none      &kp PERIOD    &trans      &trans  &kp N1   &kp N2  &kp N3  &kp NUMBER_3  &kp EQUAL
 &trans                   &trans        &trans        &trans                &trans        &trans      &trans  &kp LEFT_SHIFT                               &trans        &trans
             >;
 
