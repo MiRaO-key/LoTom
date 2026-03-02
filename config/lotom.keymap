@@ -43,6 +43,7 @@
 #define JP_RT    LS(JP_DOT)
 #define JP_QMARK LS(JP_SLASH)
 #define JP_UNDER LS(JP_BSLH)
+#define JP_EQUA  LS(JP_EQUAL)
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
@@ -75,7 +76,7 @@
 &kp Q      &kp W         &kp E             &kp R           &kp T        &kp JP_ZKHK             &kp JP_AT            &kp Y            &kp U     &kp I        &kp O         &kp P
 &kp A      &kp S         &kp D             &kp F           &kp G        &kp LSHIFT              &mt JP_COLON LSHIFT  &kp H            &kp J     &kp K        &kp L         &kp MINUS
 &kp Z      &kp X         &kp C             &kp V           &kp B        &kp LCTRL               &mt JP_YEN LALT      &kp N            &kp M     &kp COMMA    &kp DOT       &lt 2 SLASH
-&kp LGUI   &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LCTRL       &lt 4 SPACE  &kp TAB                 &kp BSPC             &lt 4 RET                         &lt 2 ESCAPE  &kp RIGHT_BRACKET
+&kp LGUI   &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 5 SPACE     &kp LCTRL    &kp TAB                 &kp BSPC             &lt 4 RET                         &lt 2 ESCAPE  &lt 3 RIGHT_BRACKET
             >;
 
             sensor-bindings = <
@@ -116,11 +117,11 @@
 
         ARROW {
             bindings = <
-&trans                                                                                                                                                                                 &trans
-&kp GRAVE  &kp LC(LS(TAB))         &kp LG(RIGHT)   &kp NUMBER_9             &kp NUMBER_0       &trans      &trans  &trans  &kp RC(LEFT_ARROW)  &kp UP_ARROW      &kp RC(RIGHT_ARROW)  &kp LG(P)
-&kp TAB    &kp LA(LG(LEFT_ARROW))  &kp LG(LEFT)    &kp LG(LA(RIGHT_ARROW))  &kp LEFT_BRACKET   &trans      &trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp LG(K)
-&kp LCMD   &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &kp RIGHT_BRACKET  &trans      &trans  &trans  &trans              &kp LC(UP_ARROW)  &trans               &kp LG(L)
-&trans     &trans                  &trans          &trans                   &trans             &trans      &trans  &trans                                         &trans               &trans
+&trans                                                                                          &trans
+&kp F12       &kp F11          &kp F10              &kp F9             &none        &none                   &none                &none            &none     &none        &none         &none
+&kp F8        &kp F7           &kp F6               &kp F5             &kp DEL      &none                   &none                &none            &none     &none        &none         &none
+&kp F4        &kp F3           &kp F2               &kp F1             &kp INS      &none                   &none                &none            &none     &none        &none         &none
+&trans     &trans        &trans            &trans          &trans       &trans                  &trans               &trans                                         &trans        &trans
             >;
 
             sensor-bindings = <
@@ -163,10 +164,10 @@
         FUNCTION {
             bindings = <
 &trans                                                                                       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                  &trans  &kp F12
+&trans  &trans        &trans        &trans        &trans        &kp JP_LPAR      &kp JP_RPAR  &kp JP_SQT   &kp JP_LPAR   &kp JP_RPAR  &kp JP_TILDE  &kp F5
+&trans  &trans        &kp MB4       &kp MB5       &kp JP_UNDER  &kp JP_LBKT      &kp JP_RBKT  &kp JP_DLLR  &kp JP_PRCNT  &kp JP_AMPS  &kp F9  &kp F10
+&trans  &kp JP_ASTRK  &kp JP_MINUS  &kp JP_PLUS   &kp JP_EQUA   &kp JP_LBRC      &kp JP_RBRC  &kp JP_EXCL  &kp JP_DQT    &kp JP_HASH  &trans  &kp F11
+&trans  &trans        &trans        &trans        &trans        &trans           &trans       &trans                             &trans  &kp F12
             >;
 
             sensor-bindings = <
