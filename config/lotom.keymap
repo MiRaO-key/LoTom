@@ -76,7 +76,7 @@
 &kp Q      &kp W         &kp E             &kp R           &kp T        &kp JP_ZKHK             &kp JP_AT            &kp Y            &kp U     &kp I        &kp O         &kp P
 &kp A      &kp S         &kp D             &kp F           &kp G        &kp LSHIFT              &mt LSHIFT JP_COLON  &kp H            &kp J     &kp K        &kp L         &kp SEMI
 &kp Z      &kp X         &kp C             &kp V           &kp B        &kp LCTRL               &mt LALT JP_YEN      &kp N            &kp M     &kp COMMA    &kp DOT       &kp SLASH
-&kp LGUI   &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 5 SPACE     &kp LCTRL    &kp TAB                 &kp BSPC             &lt 4 RET                         &lt 2 ESCAPE  &lt 3 RIGHT_BRACKET
+&kp LGUI   &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LCTRL       &lt 5 SPACE  &kp TAB                 &kp BSPC             &lt 4 RET                         &lt 2 ESCAPE  &lt 3 RIGHT_BRACKET
             >;
 
             sensor-bindings = <
