@@ -45,7 +45,7 @@
 #define JP_UNDER LS(JP_BSLH)
 #define JP_EQUA  LS(JP_EQUAL)
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 140
 
 / {
     behaviors {
